@@ -1,8 +1,9 @@
 import {StyleSheet, Text, View, Image, SafeAreaView, TouchableOpacity} from 'react-native';
-import React, {Component} from 'react';
+import React from 'react';
 import LoginButtons from '../components/LoginButton';
 import LinearGradient from 'react-native-linear-gradient';
-const LoginScreen = () => {
+
+const LoginScreen = ({navigation}) => {
   return (
     <SafeAreaView style={styles.container}>
       <LinearGradient colors={['#040306', '#131624']} style={styles.gradient}>
@@ -17,7 +18,7 @@ const LoginScreen = () => {
           title={'Sign up for free'}
           pressable={true}
           buttonText={true}
-          onPress={this.handleButtonPress}
+          onPress={() => navigation.navigate('HomeScreen')}
         />
         <LoginButtons title={'Continue with Google'} pressable={false} />
         <LoginButtons title={'Continue  with Facebook'} pressable={false} />
