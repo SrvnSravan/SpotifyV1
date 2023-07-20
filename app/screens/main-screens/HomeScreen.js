@@ -52,19 +52,19 @@ const HomeScreen = () => {
             <ScrollView horizontal={true}>
               <ArtistCard
                 imgSource={require('../../assets/images/mm.jpg')}
-                title={'The Weekend Songs...'}
+                title={'The Weekend Songs'}
               />
               <ArtistCard
                 imgSource={require('../../assets/images/billie.jpg')}
-                title={'Billie Eilish Songs...'}
+                title={'Billie Eilish Songs'}
               />
               <ArtistCard
                 imgSource={require('../../assets/images/drake.jpg')}
-                title={'Drake Songs...'}
+                title={'Drake Songs'}
               />
               <ArtistCard
                 imgSource={require('../../assets/images/playlist1.jpg')}
-                title={'Maroon 5  Songs...'}
+                title={'Maroon 5  Songs'}
               />
             </ScrollView>
           </View>
@@ -73,19 +73,19 @@ const HomeScreen = () => {
             <ScrollView horizontal={true}>
               <ArtistCard
                 imgSource={require('../../assets/images/mm.jpg')}
-                title={'The Weekend Songs...'}
+                title={'The Weekend Songs'}
               />
               <ArtistCard
                 imgSource={require('../../assets/images/billie.jpg')}
-                title={'Billie Eilish Songs...'}
+                title={'Billie Eilish Songs'}
               />
               <ArtistCard
                 imgSource={require('../../assets/images/drake.jpg')}
-                title={'Drake Songs...'}
+                title={'Drake Songs'}
               />
               <ArtistCard
                 imgSource={require('../../assets/images/playlist1.jpg')}
-                title={'Maroon 5  Songs...'}
+                title={'Maroon 5  Songs'}
               />
             </ScrollView>
           </View>
@@ -94,19 +94,19 @@ const HomeScreen = () => {
             <ScrollView horizontal={true}>
               <ArtistCard
                 imgSource={require('../../assets/images/mm.jpg')}
-                title={'The Weekend Songs...'}
+                title={'The Weekend Songs'}
               />
               <ArtistCard
                 imgSource={require('../../assets/images/billie.jpg')}
-                title={'Billie Eilish Songs...'}
+                title={'Billie Eilish Songs'}
               />
               <ArtistCard
                 imgSource={require('../../assets/images/drake.jpg')}
-                title={'Drake Songs...'}
+                title={'Drake Songs'}
               />
               <ArtistCard
                 imgSource={require('../../assets/images/playlist1.jpg')}
-                title={'Maroon 5  Songs...'}
+                title={'Maroon 5  Songs'}
               />
             </ScrollView>
           </View>
