@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, SafeAreaView, Image } from 'react-native'
+import { StyleSheet, Text, View, SafeAreaView, Image, TouchableOpacity } from 'react-native'
 import React from 'react'
 
 const TopBar = () => {
@@ -10,18 +10,24 @@ const TopBar = () => {
         style={styles.logo}
       />
       <Text style={styles.textContainer}>Good Morning</Text>
+      <TouchableOpacity>
       <View style={{flexDirection: 'row', paddingRight: 25}}>
       <Image source={require("../assets/images/bell.png")}
       style={styles.bellIcon}/>
       </View>
+      </TouchableOpacity>
+      <TouchableOpacity>
       <View style={{ paddingRight: 25}}>
       <Image source={require("../assets/images/clock-icon.png")}
       style={styles.clockIcon}/>
       </View>
+      </TouchableOpacity>
+      <TouchableOpacity>
       <View style={{ paddingRight: 5}}>
       <Image source={require("../assets/images/settings.jpg")}
       style={styles.settingsIcon}/>
       </View>
+      </TouchableOpacity>
       
     </View>
   </SafeAreaView>
