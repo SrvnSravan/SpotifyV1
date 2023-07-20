@@ -1,4 +1,4 @@
-import {StyleSheet, Text, View, Image, SafeAreaView} from 'react-native';
+import {StyleSheet, Text, View, Image, SafeAreaView, TouchableOpacity} from 'react-native';
 import React, {Component} from 'react';
 import LoginButtons from '../components/LoginButton';
 import LinearGradient from 'react-native-linear-gradient';
@@ -14,14 +14,18 @@ const LoginScreen = () => {
         </View>
         <Text style={styles.text}>Millions of Songs Free on Spotify!</Text>
         <LoginButtons
-          title={'Sign in with Spotify'}
+          title={'Sign up for free'}
           pressable={true}
           buttonText={true}
           onPress={this.handleButtonPress}
         />
-        <LoginButtons title={'Continue with phone number'} pressable={false} />
         <LoginButtons title={'Continue with Google'} pressable={false} />
-        <LoginButtons title={'Sign in with Facebook'} pressable={false} />
+        <LoginButtons title={'Continue  with Facebook'} pressable={false} />
+        <TouchableOpacity>
+        <View style={styles.loginTextContainer}>
+        <Text style={styles.loginText}>Log in</Text>
+        </View>
+        </TouchableOpacity>
       </LinearGradient>
     </SafeAreaView>
   );
@@ -53,6 +57,16 @@ const styles = StyleSheet.create({
     marginTop: 40,
     marginBottom: 80,
   },
+  loginText: {
+    color: "white",
+    fontWeight: "bold",
+    fontSize: 15
+  },
+  loginTextContainer: {
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop:10
+  }
 });
 
 export default LoginScreen;

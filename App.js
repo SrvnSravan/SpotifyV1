@@ -5,7 +5,7 @@ import HomeScreen from './app/screens/main-screens/HomeScreen';
 
 const App = () => {
   return (
-   <HomeScreen />
+   <LoginScreen />
   )
 }
 

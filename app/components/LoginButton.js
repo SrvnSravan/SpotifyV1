@@ -29,10 +29,11 @@ import {
       marginLeft: 'auto',
       marginRight: 'auto',
       width: 300,
+      height: 50,
       borderRadius: 25,
       alignItems: 'center',
       justifyContent: 'center',
-      marginVertical: 10,
+      marginVertical: 5,
     },
     normalPressable: {
       backgroundColor: '#131624',
@@ -40,6 +41,7 @@ import {
       marginLeft: 'auto',
       marginRight: 'auto',
       width: 300,
+      height: 50,
       borderRadius: 25,
       alignItems: 'center',
       justifyContent: 'center',
@@ -52,10 +54,12 @@ import {
     buttonText: {
       fontWeight: 'bold',
       color: 'black',
+      fontSize: 15
     },
     normalButtonText: {
       fontWeight: 'bold',
       color: 'white',
+      fontSize: 15
     },
   });
   
