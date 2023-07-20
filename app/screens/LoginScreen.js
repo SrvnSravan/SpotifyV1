@@ -1,4 +1,11 @@
-import {StyleSheet, Text, View, Image, SafeAreaView, TouchableOpacity} from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  View,
+  Image,
+  SafeAreaView,
+  TouchableOpacity,
+} from 'react-native';
 import React from 'react';
 import LoginButtons from '../components/LoginButton';
 import LinearGradient from 'react-native-linear-gradient';
@@ -23,9 +30,9 @@ const LoginScreen = ({navigation}) => {
         <LoginButtons title={'Continue with Google'} pressable={false} />
         <LoginButtons title={'Continue  with Facebook'} pressable={false} />
         <TouchableOpacity>
-        <View style={styles.loginTextContainer}>
-        <Text style={styles.loginText}>Log in</Text>
-        </View>
+          <View style={styles.loginTextContainer}>
+            <Text style={styles.loginText}>Log in</Text>
+          </View>
         </TouchableOpacity>
       </LinearGradient>
     </SafeAreaView>
@@ -59,15 +66,15 @@ const styles = StyleSheet.create({
     marginBottom: 80,
   },
   loginText: {
-    color: "white",
-    fontWeight: "bold",
-    fontSize: 15
+    color: 'white',
+    fontWeight: 'bold',
+    fontSize: 15,
   },
   loginTextContainer: {
-    justifyContent: "center",
-    alignItems: "center",
-    marginTop:10
-  }
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: 10,
+  },
 });
 
 export default LoginScreen;
