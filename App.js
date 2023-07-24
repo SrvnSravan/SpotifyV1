@@ -7,11 +7,12 @@ import {NavigationContainer} from '@react-navigation/native';
 import SplashScreen from './app/screens/SplashScreen';
 import SearchBar from './app/components/SearchBar';
 import SearchScreen from './app/screens/main-screens/SearchScreen';
+import SearchCards from './app/components/SearchCards';
 
 const App = () => {
   return (
     <NavigationContainer>
-      <SearchBar />
+      <SearchScreen />
     </NavigationContainer>
   );
 };

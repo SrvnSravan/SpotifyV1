@@ -45,7 +45,6 @@ const SearchBar = () => {
     input: {
       flex: 1,
       fontSize: 16,
-      fontWeight: "bold",
       color: '#000000',
       height: 40
       
