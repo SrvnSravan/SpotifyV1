@@ -8,11 +8,12 @@ import SplashScreen from './app/screens/SplashScreen';
 import SearchBar from './app/components/SearchBar';
 import SearchScreen from './app/screens/main-screens/SearchScreen';
 import SearchCards from './app/components/SearchCards';
+import LibraryScreen from './app/screens/main-screens/LibraryScreen';
 
 const App = () => {
   return (
     <NavigationContainer>
-      <Navigation />
+      <LibraryScreen />
     </NavigationContainer>
   );
 };

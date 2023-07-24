@@ -17,35 +17,35 @@ const SearchScreen = () => {
           </View>
           <View style={{flexDirection: 'row'}}>
             <SearchCards backgroundColor={'orange'} title={'Podcasts'} />
-            <SearchCards backgroundColor={'blue'} title={'Live Events'}/>
+            <SearchCards backgroundColor={'blue'} title={'Live Events'} />
           </View>
           <View style={{flexDirection: 'row'}}>
             <SearchCards backgroundColor={'yellow'} title={'Made for You'} />
-            <SearchCards backgroundColor={'purple'} title={'New Releases'}/>
+            <SearchCards backgroundColor={'purple'} title={'New Releases'} />
           </View>
           <View style={{flexDirection: 'row'}}>
-            <SearchCards backgroundColor={'green'} title={'Hindhi'}/>
-            <SearchCards backgroundColor={'brown'} title={'Punjabi'}/>
+            <SearchCards backgroundColor={'green'} title={'Hindhi'} />
+            <SearchCards backgroundColor={'brown'} title={'Punjabi'} />
           </View>
           <View style={{flexDirection: 'row'}}>
-            <SearchCards backgroundColor={'pink'} title={'Tamil'}/>
-            <SearchCards backgroundColor={'grey'} title={'Telugu'}/>
+            <SearchCards backgroundColor={'pink'} title={'Tamil'} />
+            <SearchCards backgroundColor={'grey'} title={'Telugu'} />
           </View>
           <View style={{flexDirection: 'row'}}>
-            <SearchCards backgroundColor={'orange'} title={'Pop'}/>
-            <SearchCards backgroundColor={'blue'} title={'Indie'}/>
+            <SearchCards backgroundColor={'orange'} title={'Pop'} />
+            <SearchCards backgroundColor={'blue'} title={'Indie'} />
           </View>
           <View style={{flexDirection: 'row'}}>
-            <SearchCards backgroundColor={'brown'} title={'Trending'}/>
-            <SearchCards backgroundColor={'green'} title={'Love'}/>
+            <SearchCards backgroundColor={'brown'} title={'Trending'} />
+            <SearchCards backgroundColor={'green'} title={'Love'} />
           </View>
           <View style={{flexDirection: 'row'}}>
-            <SearchCards backgroundColor={'pink'} title={'Discover'}/>
-            <SearchCards backgroundColor={'orange'} title={'Radio'}/>
+            <SearchCards backgroundColor={'pink'} title={'Discover'} />
+            <SearchCards backgroundColor={'orange'} title={'Radio'} />
           </View>
           <View style={{flexDirection: 'row'}}>
-            <SearchCards backgroundColor={'green'} title={'Mood'}/>
-            <SearchCards backgroundColor={'grey'} title={'Hip-Hop'}/>
+            <SearchCards backgroundColor={'green'} title={'Mood'} />
+            <SearchCards backgroundColor={'grey'} title={'Hip-Hop'} />
           </View>
         </ScrollView>
       </View>
@@ -70,6 +70,6 @@ const styles = StyleSheet.create({
   blank: {
     height: 20,
     width: 90,
-    marginTop: 70
-  }
+    marginTop: 70,
+  },
 });
