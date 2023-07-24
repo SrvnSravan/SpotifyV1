@@ -10,6 +10,7 @@ const SearchScreen = () => {
       <View>
         <Text style={styles.text}>Search</Text>
         <SearchBar />
+        <View style={styles.blank}></View>
         <ScrollView>
           <View>
             <Text style={styles.browseText}>Browse all</Text>
@@ -62,9 +63,13 @@ const styles = StyleSheet.create({
   },
   browseText: {
     color: 'white',
-    marginTop: 80,
     marginBottom: 20,
     fontWeight: 'bold',
     fontSize: 14,
   },
+  blank: {
+    height: 20,
+    width: 90,
+    marginTop: 70
+  }
 });

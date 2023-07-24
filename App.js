@@ -12,7 +12,7 @@ import SearchCards from './app/components/SearchCards';
 const App = () => {
   return (
     <NavigationContainer>
-      <SearchScreen />
+      <Navigation />
     </NavigationContainer>
   );
 };
