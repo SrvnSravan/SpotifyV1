@@ -1,9 +1,9 @@
 import {StyleSheet, Text, View, Image, TouchableOpacity} from 'react-native';
 import React from 'react';
 
-const PlaylistTiles = ({imageSource, title, subTitle}) => {
+const PlaylistTiles = ({imageSource, title, subTitle, onPress}) => {
   return (
-    <TouchableOpacity>
+    <TouchableOpacity onPress={onPress}>
       <View style={styles.container}>
         <View style={{flexDirection: 'row', alignItems: 'center'}}>
           <Image source={imageSource} style={styles.image} />

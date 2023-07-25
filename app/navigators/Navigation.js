@@ -5,6 +5,7 @@ import LoginScreen from '../screens/LoginScreen';
 import HomeScreen from '../screens/main-screens/HomeScreen';
 import SplashScreen from '../screens/SplashScreen';
 import BottomTabs from '../navigators/BottomTabs';
+import LikedSongsScreen from '../screens/LikedSongsScreen';
 
 const Stack = createStackNavigator();
 
@@ -24,6 +25,11 @@ const Navigation = () => {
       <Stack.Screen
         name="BottomTabs"
         component={BottomTabs}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="LikedSongsScreen"
+        component={LikedSongsScreen}
         options={{headerShown: false}}
       />
     </Stack.Navigator>

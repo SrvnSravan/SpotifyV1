@@ -2,11 +2,11 @@ import {StyleSheet, Text, TouchableOpacity, View, Image} from 'react-native';
 import React from 'react';
 import LinearGradient from 'react-native-linear-gradient';
 
-const PlaylistButton = ({imageSource, title, image}) => {
+const PlaylistButton = ({imageSource, title, image, onPress}) => {
   const imageContainer = image ? styles.likeImage : styles.image;
 
   return (
-    <TouchableOpacity>
+    <TouchableOpacity onPress={onPress}>
       <View style={styles.touchableContainer}>
         <LinearGradient colors={['#33006F', '#FFFFFF']}>
           <View style={styles.container}>

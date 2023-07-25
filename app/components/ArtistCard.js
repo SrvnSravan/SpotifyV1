@@ -1,9 +1,9 @@
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native'
 import React from 'react'
 
-const ArtistCard = ({imgSource, title}) => {
+const ArtistCard = ({imgSource, title, onPress}) => {
   return (
-    <TouchableOpacity>
+    <TouchableOpacity onPress={onPress}>
     <View>
       <Image source={imgSource}
       style={styles.image}/>

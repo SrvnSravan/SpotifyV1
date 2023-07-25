@@ -5,7 +5,7 @@ import TopBars from '../../components/TopBars';
 import AnimatedButton from '../../components/AnimatedButton';
 import PlaylistTiles from '../../components/PlaylistTiles';
 
-const LibraryScreen = () => {
+const LibraryScreen = ({navigation}) => {
   return (
     <LinearGradient colors={['#040306', '#131624']} style={{flex: 1}}>
       <TopBars />
@@ -16,16 +16,19 @@ const LibraryScreen = () => {
         imageSource={require('../../assets/images/drake.jpg')}
         title={'Drake songs'}
         subTitle={'Playlist . 192 songs'}
+        onPress={()=>{navigation.navigate('LikedSongsScreen')}}
       />
       <PlaylistTiles
         imageSource={require('../../assets/images/billie.jpg')}
         title={'Billie Eilish songs'}
         subTitle={'Playlist . 62 songs'}
+        onPress={()=>{navigation.navigate('LikedSongsScreen')}}
       />
       <PlaylistTiles
         imageSource={require('../../assets/images/mm.jpg')}
         title={'The Weekend songs'}
         subTitle={'Playlist . 92 songs'}
+        onPress={()=>{navigation.navigate('LikedSongsScreen')}}
       />
       </ScrollView>
     </LinearGradient>

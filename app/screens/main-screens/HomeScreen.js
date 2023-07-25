@@ -13,7 +13,7 @@ import TopBar from '../../components/TopBar';
 import PlaylistButton from '../../components/PlaylistButton';
 import ArtistCard from '../../components/ArtistCard';
 
-const HomeScreen = () => {
+const HomeScreen = ({navigation}) => {
   return (
     <LinearGradient colors={['#040306', '#131624']} style={{flex: 1}}>
       <SafeAreaView>
@@ -30,10 +30,12 @@ const HomeScreen = () => {
               imageSource={require('../../assets/images/love.png')}
               title={'Liked Songs'}
               image={true}
+              onPress={()=>{navigation.navigate('LikedSongsScreen')}}
             />
             <PlaylistButton
               imageSource={require('../../assets/images/playlist1.jpg')}
               title={'Maroon 5'}
+              onPress={()=>{navigation.navigate('LikedSongsScreen')}}
             />
           </View>
           <View style={{flexDirection: 'row'}}>
@@ -41,10 +43,12 @@ const HomeScreen = () => {
               imageSource={require('../../assets/images/drake.jpg')}
               title={'Drake'}
               image={false}
+              onPress={()=>{navigation.navigate('LikedSongsScreen')}}
             />
             <PlaylistButton
               imageSource={require('../../assets/images/billie.jpg')}
               title={'Billie Eilish'}
+              onPress={()=>{navigation.navigate('LikedSongsScreen')}}
             />
           </View>
           <Text style={styles.text}>Your Top Artists</Text>
@@ -53,18 +57,22 @@ const HomeScreen = () => {
               <ArtistCard
                 imgSource={require('../../assets/images/mm.jpg')}
                 title={'The Weekend Songs'}
+                onPress={()=>{navigation.navigate('LikedSongsScreen')}}
               />
               <ArtistCard
                 imgSource={require('../../assets/images/billie.jpg')}
                 title={'Billie Eilish Songs'}
+                onPress={()=>{navigation.navigate('LikedSongsScreen')}}
               />
               <ArtistCard
                 imgSource={require('../../assets/images/drake.jpg')}
                 title={'Drake Songs'}
+                onPress={()=>{navigation.navigate('LikedSongsScreen')}}
               />
               <ArtistCard
                 imgSource={require('../../assets/images/playlist1.jpg')}
                 title={'Maroon 5  Songs'}
+                onPress={()=>{navigation.navigate('LikedSongsScreen')}}
               />
             </ScrollView>
           </View>
