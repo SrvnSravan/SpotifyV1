@@ -5,7 +5,7 @@ import NormalButton from '../../components/NormalButton';
 import PremiumCard from '../../components/PremiumCard';
 import PlanCard from '../../components/PlanCard';
 
-const PremiumScreen = () => {
+const PremiumScreen = ({navigation}) => {
   return (
     <LinearGradient colors={['#040306', '#131624']} style={{flex: 1}}>
       <ScrollView>
@@ -25,7 +25,7 @@ const PremiumScreen = () => {
         <View style={styles.headingContainer}>
           <Text style={styles.freeTrialText}>FREE TRIAL</Text>
           <Text style={styles.headingText}>Try Premium free for 1 month</Text>
-          <NormalButton title={'GET PREMIUM'} />
+          <NormalButton onPress={()=> {navigation.navigate('LikedSongsScreen')}} title={'GET PREMIUM'} />
           <View>
             <Text style={styles.descriptionText}>
               From $49/month after. Offer only for users who are new to Premium.

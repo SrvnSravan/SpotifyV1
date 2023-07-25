@@ -8,7 +8,7 @@ import PremiumScreen from './app/screens/main-screens/PremiumScreen';
 const App = () => {
   return (
     <NavigationContainer>
-      <PremiumScreen />
+      <Navigation />
     </NavigationContainer>
   );
 };

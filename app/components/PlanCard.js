@@ -18,7 +18,7 @@ const PlanCard = ({
       </View>
       <View style={{justifyContent: 'center', alignItems: 'center'}}>
         <Text style={styles.cardsSubHeading}>{description}</Text>
-        <NormalButton title={'VIEW PLANS'} />
+        <NormalButton  title={'VIEW PLANS'} />
         <Text style={styles.cardsSubHeading}>{description1}</Text>
         <Text style={styles.cardsSubHeading}>{description2}</Text>
       </View>

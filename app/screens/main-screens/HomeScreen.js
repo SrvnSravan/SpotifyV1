@@ -80,20 +80,20 @@ const HomeScreen = ({navigation}) => {
           <View style={{flexDirection: 'row'}}>
             <ScrollView horizontal={true}>
               <ArtistCard
-                imgSource={require('../../assets/images/mm.jpg')}
-                title={'The Weekend Songs'}
+                imgSource={require('../../assets/images/ed.jpg')}
+                title={'Ed Sheeran Songs'}
               />
               <ArtistCard
-                imgSource={require('../../assets/images/billie.jpg')}
-                title={'Billie Eilish Songs'}
+                imgSource={require('../../assets/images/JB.jpeg')}
+                title={'Justin Bieber Songs'}
               />
               <ArtistCard
-                imgSource={require('../../assets/images/drake.jpg')}
-                title={'Drake Songs'}
+                imgSource={require('../../assets/images/chainsmokers.jpg')}
+                title={'ChainSmokers Songs'}
               />
               <ArtistCard
-                imgSource={require('../../assets/images/playlist1.jpg')}
-                title={'Maroon 5  Songs'}
+                imgSource={require('../../assets/images/anne.jpg')}
+                title={'Anne Marrie  Songs'}
               />
             </ScrollView>
           </View>

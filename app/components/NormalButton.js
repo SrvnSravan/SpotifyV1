@@ -7,7 +7,7 @@ import {
 } from 'react-native';
 import React from 'react';
 
-const NormalButton = ({title, onPress, containerStyle}) => {
+const NormalButton = ({title, onPress}) => {
   return (
     <View>
       <TouchableOpacity style={styles.pressable} onPress={onPress}>
