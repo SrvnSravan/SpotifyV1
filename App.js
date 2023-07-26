@@ -3,12 +3,14 @@ import React from 'react';
 import Navigation from './app/navigators/Navigation';
 import {NavigationContainer} from '@react-navigation/native';
 import PremiumScreen from './app/screens/main-screens/PremiumScreen';
+import AccountCreationScreen from './app/screens/AccountCreationScreen';
+import SearchScreen from './app/screens/main-screens/SearchScreen';
 
 
 const App = () => {
   return (
     <NavigationContainer>
-      <Navigation />
+      <AccountCreationScreen />
     </NavigationContainer>
   );
 };

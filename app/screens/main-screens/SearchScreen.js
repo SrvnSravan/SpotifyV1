@@ -9,7 +9,10 @@ const SearchScreen = () => {
     <LinearGradient colors={['#040306', '#131624']} style={{flex: 1}}>
       <View>
         <Text style={styles.text}>Search</Text>
-        <SearchBar />
+        <SearchBar
+          imageSource={require('../../assets/images/search.png')}
+          placeholder={'What do you want to listen to? '}
+        />
         <View style={styles.blank}></View>
         <ScrollView>
           <View>

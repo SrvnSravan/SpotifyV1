@@ -2,7 +2,7 @@ import {StyleSheet, Text, View, TextInput, Image} from 'react-native';
 import React from 'react';
 import LinearGradient from 'react-native-linear-gradient';
 
-const SearchBar = () => {
+const SearchBar = ({imageSource, placeholder}) => {
   // const [searchText, setSearchText] = useState('');
 
   // const handleSearch = (text) => {
@@ -14,13 +14,10 @@ const SearchBar = () => {
   return (
     <LinearGradient colors={['#040306', '#131624']} style={{flex: 1}}>
       <View style={styles.container}>
-        <Image
-          source={require('../assets/images/search.png')}
-          style={styles.searchIcon}
-        />
+        <Image source={imageSource} style={styles.searchIcon} />
         <TextInput
           style={styles.input}
-          placeholder="What do you want to listen to?"
+          placeholder={placeholder}
           placeholderTextColor="#000000"
           textAlign="center"
         />
