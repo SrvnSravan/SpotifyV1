@@ -8,12 +8,13 @@ import SearchScreen from './app/screens/main-screens/SearchScreen';
 import ChooseDOBScreen from './app/screens/ChooseDOBScreen';
 import ChooseGender from './app/screens/ChooseGenderScreen';
 import ChooseNameScreen from './app/screens/ChooseNameScreen';
+import ChooseMusicTypeScreen from './app/screens/ChooseMusicTypeScreen';
 
 
 const App = () => {
   return (
     <NavigationContainer>
-      <ChooseNameScreen />
+      <ChooseMusicTypeScreen />
     </NavigationContainer>
   );
 };
