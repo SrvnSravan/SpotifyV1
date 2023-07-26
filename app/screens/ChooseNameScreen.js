@@ -4,8 +4,9 @@ import LinearGradient from 'react-native-linear-gradient';
 import Datepicker from '../components/DatePicker';
 import NormalButton from '../components/NormalButton';
 import LoginButtons from '../components/LoginButton';
+import SearchBar from '../components/SearchBar';
 
-const ChooseGender = ({navigation}) => {
+const ChooseNameScreen = ({navigation}) => {
   return (
     <LinearGradient colors={['#040306', '#131624']} style={{flex: 1}}>
       <View style={{flexDirection: 'row'}}>
@@ -19,26 +20,28 @@ const ChooseGender = ({navigation}) => {
       </View>
 
       <View>
-        <Text style={styles.heading}>What's your Gender?</Text>
-        <View
-          style={{margin: 10, justifyContent: 'space-around', marginTop: 100}}>
-          <LoginButtons
-            title={'Male'}
-            onPress={() => {
-              navigation.navigate('ChooseNameScreen');
-            }}
-          />
-          <LoginButtons title={'Female'} />
-          <LoginButtons title={'Non-Binary'} />
+        <Text style={styles.heading}>What's your name?</Text>
+        <SearchBar />
+        <View style={styles.descriptionContainer}>
+          <Text style={styles.description}>
+            This appears on your Spotify profile
+          </Text>
+          <Text style={styles.description}>
+            By taping 'Create Account' you agree to the Spotify terms and use.
+          </Text>
         </View>
-        <LoginButtons title={'Other'} />
-        <LoginButtons title={'Prefer not to say'} />
+        <NormalButton
+          onPress={() => {
+            navigation.navigate('BottomTabs');
+          }}
+          title={'Next'}
+        />
       </View>
     </LinearGradient>
   );
 };
 
-export default ChooseGender;
+export default ChooseNameScreen;
 
 const styles = StyleSheet.create({
   text: {
@@ -58,12 +61,26 @@ const styles = StyleSheet.create({
   },
   heading: {
     color: 'white',
-    fontSize: 40,
+    fontSize: 30,
     fontWeight: 'bold',
     marginTop: 50,
+    margin: 10,
   },
   datePicker: {
     margin: 35,
     marginBottom: 50,
+  },
+  description: {
+    color: 'white',
+    marginTop: 50,
+    fontWeight: 'bold',
+    margin: 10,
+  },
+  descriptionContainer: {
+    marginTop: 20,
+  },
+  subHeading: {
+    color: 'green',
+    fontWeight: 'bold',
   },
 });

@@ -7,12 +7,13 @@ import AccountCreationScreen from './app/screens/AccountCreationScreen';
 import SearchScreen from './app/screens/main-screens/SearchScreen';
 import ChooseDOBScreen from './app/screens/ChooseDOBScreen';
 import ChooseGender from './app/screens/ChooseGenderScreen';
+import ChooseNameScreen from './app/screens/ChooseNameScreen';
 
 
 const App = () => {
   return (
     <NavigationContainer>
-      <ChooseGender />
+      <ChooseNameScreen />
     </NavigationContainer>
   );
 };
