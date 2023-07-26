@@ -5,7 +5,7 @@ import Datepicker from '../components/DatePicker'
 import NormalButton from '../components/NormalButton'
 import LoginButtons from '../components/LoginButton'
 
-const ChooseDOBScreen = ({navigation}) => {
+const ChooseGender = ({navigation}) => {
   return (
     <LinearGradient colors={['#040306', '#131624']} style={{flex: 1}}>
         <View style={{flexDirection: "row"}}>
@@ -20,19 +20,23 @@ const ChooseDOBScreen = ({navigation}) => {
 
       <View>
         <Text style={styles.heading}>
-            What's your date of birth?
+            What's your Gender?
         </Text>
-        <View style={styles.datePicker}>
-        <Datepicker />
+        <View style={{flexDirection: "row", margin: 10, justifyContent: "space-around"}}>
+        <LoginButtons title={'Male'}/>
+        <LoginButtons title={'Female'}/>
+        <LoginButtons title={'Non-Binary'}/>
         </View>
-        <NormalButton title={'Next'}
-        onPress={()=> {navigation.navigate('BottomTabs')}} />
+        <View style={{flexDirection: "row", margin: 10, justifyContent: "space-around"}}>
+        <LoginButtons title={'Other'}/>
+        <LoginButtons title={'Prefer not to say'}/>
+        </View>
       </View>
     </LinearGradient>
   )
 }
 
-export default ChooseDOBScreen
+export default ChooseGender
 
 const styles = StyleSheet.create({
     text: {

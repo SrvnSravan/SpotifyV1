@@ -40,8 +40,7 @@ import {
       padding: 10,
       marginLeft: 'auto',
       marginRight: 'auto',
-      width: 300,
-      height: 50,
+     
       borderRadius: 25,
       alignItems: 'center',
       justifyContent: 'center',

@@ -6,12 +6,13 @@ import PremiumScreen from './app/screens/main-screens/PremiumScreen';
 import AccountCreationScreen from './app/screens/AccountCreationScreen';
 import SearchScreen from './app/screens/main-screens/SearchScreen';
 import ChooseDOBScreen from './app/screens/ChooseDOBScreen';
+import ChooseGender from './app/screens/ChooseGenderScreen';
 
 
 const App = () => {
   return (
     <NavigationContainer>
-      <ChooseDOBScreen />
+      <ChooseGender />
     </NavigationContainer>
   );
 };

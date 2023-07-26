@@ -25,7 +25,7 @@ const LoginScreen = ({navigation}) => {
           title={'Sign up for free'}
           pressable={true}
           buttonText={true}
-          onPress={() => navigation.navigate('BottomTabs')}
+          onPress={() => navigation.navigate('AccountCreationScreen')}
         />
         <LoginButtons title={'Continue with Google'} pressable={false} />
         <LoginButtons title={'Continue  with Facebook'} pressable={false} />

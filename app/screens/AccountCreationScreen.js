@@ -5,7 +5,7 @@ import SearchBar from '../components/SearchBar';
 import NormalButton from '../components/NormalButton';
 import LoginButtons from '../components/LoginButton';
 
-const AccountCreationScreen = () => {
+const AccountCreationScreen = ({navigation}) => {
   return (
     <LinearGradient colors={['#040306', '#131624']} style={{flex: 1}}>
       <Image
@@ -21,7 +21,7 @@ const AccountCreationScreen = () => {
         <SearchBar />
       </View>
       <View style={styles.normalButton}>
-        <NormalButton title={'Login'} />
+        <NormalButton title={'Login'} onPress={()=> {navigation.navigate('ChooseDOBScreen')}}/>
       </View>
       <LoginButtons title={'Log in without password'} />
     </LinearGradient>
