@@ -14,7 +14,7 @@ import ChooseMusicTypeScreen from './app/screens/ChooseMusicTypeScreen';
 const App = () => {
   return (
     <NavigationContainer>
-      <ChooseMusicTypeScreen />
+      <Navigation />
     </NavigationContainer>
   );
 };

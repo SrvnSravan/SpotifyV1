@@ -1,9 +1,9 @@
 import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import React from 'react';
 
-const SearchCards = ({backgroundColor, title}) => {
+const SearchCards = ({backgroundColor, title, onPress}) => {
   return (
-    <TouchableOpacity>
+    <TouchableOpacity onPress={onPress}>
       <View style={[styles.container, {backgroundColor}]}>
         <Text style={styles.text}>{title}</Text>
       </View>

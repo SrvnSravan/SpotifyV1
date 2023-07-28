@@ -32,7 +32,7 @@ const ChooseNameScreen = ({navigation}) => {
         </View>
         <NormalButton
           onPress={() => {
-            navigation.navigate('BottomTabs');
+            navigation.navigate('ChooseMusicTypeScreen');
           }}
           title={'Next'}
         />

@@ -2,14 +2,15 @@ import { StyleSheet, Text, View, ScrollView } from 'react-native'
 import React from 'react'
 import LinearGradient from 'react-native-linear-gradient'
 import SearchCards from '../components/SearchCards'
+import Navigation from '../navigators/Navigation'
 
-const ChooseMusicTypeScreen = () => {
+const ChooseMusicTypeScreen = ({navigation}) => {
   return (
     <LinearGradient colors={['#040306', '#131624']} style={{flex: 1}}>
       <Text style={styles.text}>What music do you like?</Text>
       <ScrollView>
       <View style={{flexDirection: "row"}}>
-        <SearchCards backgroundColor={'yellow'}title={'Hindi'}/>
+        <SearchCards backgroundColor={'yellow'}title={'Hindi'} onPress={()=> {navigation.navigate('BottomTabs')}}/>
         <SearchCards backgroundColor={'orange'} title={'English'}/>
       </View>
       <View style={{flexDirection: "row"}}>
