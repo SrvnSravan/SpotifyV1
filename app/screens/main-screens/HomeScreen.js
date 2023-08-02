@@ -30,7 +30,7 @@ const HomeScreen = ({navigation}) => {
               imageSource={require('../../assets/images/love.png')}
               title={'Liked Songs'}
               image={true}
-              onPress={()=>{navigation.navigate('LikedSongsScreen')}}
+              onPress={()=>{navigation.navigate('SongsListScreen')}}
             />
             <PlaylistButton
               imageSource={require('../../assets/images/playlist1.jpg')}

@@ -9,12 +9,13 @@ import ChooseDOBScreen from './app/screens/ChooseDOBScreen';
 import ChooseGender from './app/screens/ChooseGenderScreen';
 import ChooseNameScreen from './app/screens/ChooseNameScreen';
 import ChooseMusicTypeScreen from './app/screens/ChooseMusicTypeScreen';
+import SongsListScreen from './app/screens/SongsListScreen';
 
 
 const App = () => {
   return (
     <NavigationContainer>
-      <Navigation />
+      <SongsListScreen />
     </NavigationContainer>
   );
 };

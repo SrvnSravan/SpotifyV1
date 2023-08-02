@@ -11,6 +11,7 @@ import AccountCreationScreen from '../screens/AccountCreationScreen';
 import ChooseGender from '../screens/ChooseGenderScreen';
 import ChooseNameScreen from '../screens/ChooseNameScreen';
 import ChooseMusicTypeScreen from '../screens/ChooseMusicTypeScreen';
+import SongsListScreen from '../screens/SongsListScreen';
 
 const Stack = createStackNavigator();
 
@@ -60,6 +61,11 @@ const Navigation = () => {
       <Stack.Screen
         name="ChooseMusicTypeScreen"
         component={ChooseMusicTypeScreen}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="SongsListScreen"
+        component={SongsListScreen}
         options={{headerShown: false}}
       />
     </Stack.Navigator>
